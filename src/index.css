@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "HalfttoneJo";
+  src: url("/src/assets/fonts/HalftoneJo.otf");
+}
+
+@font-face {
+  font-family: "Kugile_Demo";
+  src: url("./assets/fonts/Kugile_Demo.ttf");
+}
+
+@font-face {
+  font-family: "NeueHaas";
+  src: url("./assets/fonts/NeueHaasGrotTextRound-75Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: "Piala_Regular";
+  src: url("./assets/fonts/Piala-Regular-BF68fcd8840bdb6.otf");
+}
+
+@font-face {
+  font-family: "PrimorStylish";
+  src: url("./assets/fonts/PrimorStylish.otf");
+}
+
+@font-face {
+  font-family: "Quivert";
+  src: url("./assets/fonts/Quivert.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("./assets/fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Black-Italic";
+  src: url("./assets/fonts/Montserrat-BlackItalic.otf");
+}
+
+:root {
+  background: rgb(0, 0, 0, 97%);
+  --white: #FFFFFF;
+}
+
+@theme {
+  --color-brand: #FFFFFF;
+
+  --font-neuehaas: "NeueHaas", sans-serif;
+  --font-halftonejo: "HalfttoneJo", sans-serif;
+  --font-kugile-demo: "Kugile_Demo", sans-serif;
+  --font-piala-regular: "Piala_Regular", sans-serif;
+  --font-primorstylish: "PrimorStylish", sans-serif;
+  --font-quivert: "Quivert", sans-serif;
+  --font-montserrat-black: "Montserrat-Black", sans-serif;
+  --font-montserrat-black-italic: "Montserrat-Black-Italic", sans-serif;
+
+  --tracking: -0.09rem;
+  --color-white-2: #E8EDF2;
+  --color-grey-1: #848484;
+  --color-opacity: rgba(11, 9, 9, 0.75);
+  --color-border: #D9D9D9;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--white);
+}
+
+/* ::selection {
+  background: #FFFBF1;
+  color: black;
+  padding: 10px;
+} */
