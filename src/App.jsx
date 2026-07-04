@@ -8,6 +8,10 @@ import Certifications from "./pages/Certifications";
 
 import Navbar from "./components/Navbar";
 import Divider from "./components/Divider";
+import TechCard from "./components/TechCard";
+import Button from "./components/Button";
+import Intro from "./components/Intro";
+import ProjectCard from "./components/ProjectCard";
 
 function Layout() {
   const location = useLocation();

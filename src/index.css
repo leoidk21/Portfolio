@@ -69,8 +69,21 @@ body {
   color: var(--white);
 }
 
-/* ::selection {
+::selection {
   background: #FFFBF1;
   color: black;
   padding: 10px;
-} */
+}
+
+svg {
+    width: 8vw;
+    height: auto;
+    display: flex;
+    flex: 0 0 auto;
+    max-width: 100px;
+    aspect-ratio: 1/1;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+}
