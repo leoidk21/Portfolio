@@ -1,4 +1,5 @@
 import profile from "../assets/images/Profile.jpg";
+import Reveal from "./Reveal";
 
 function Intro() {
     const info = ['i. Leo Chavez', 'ii. 23_', 'iii. Rodriguez, Rizal, Philippines', 'iv. Bachelor of Science in Information Technology  |  Graduate '];
@@ -55,16 +56,18 @@ function Intro() {
             </div>
 
             {/* right column */}
-            <div className="flex-1 flex flex-col gap-9">
-                {parag.map((parags, index) => (
-                    <p
-                        key={index}
-                        className="font-neuehaas tracking-tighter sm:text-2xl md:text-2xl lg:text-[32px] text-justify"
-                    >
-                        {parags}
-                    </p>
-                ))}
-            </div>
+            <Reveal delay={0.7}>
+                <div className="flex-1 flex flex-col gap-9">
+                    {parag.map((parags, index) => (
+                        <p
+                            key={index}
+                            className="font-neuehaas tracking-tighter sm:text-2xl md:text-2xl lg:text-[32px] text-justify"
+                        >
+                            {parags}
+                        </p>
+                    ))}
+                </div>
+            </Reveal>
         </article>
     );
 }

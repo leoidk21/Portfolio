@@ -1,8 +1,13 @@
+import PageTitle from "../components/PageTitle";
+import Reveal from "../components/Reveal";
+
 function Certifications() {
     return (
         <>
             <main>
-                <h1>THIS IS CERTIFICATIONS PAGE!</h1>
+                <Reveal>
+                    <PageTitle text="Certifications"/>
+                </Reveal>
             </main>
         </>
     );

@@ -12,6 +12,9 @@ import TechCard from "./components/TechCard";
 import Button from "./components/Button";
 import Intro from "./components/Intro";
 import ProjectCard from "./components/ProjectCard";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import PageTitle from "./components/PageTitle";
 
 function Layout() {
   const location = useLocation();

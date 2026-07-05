@@ -3,6 +3,7 @@ import { motion, AnimatePresence, easeInOut, easeIn, scale } from "framer-motion
 import project1 from "../assets/images/Project1.png";
 import project2 from "../assets/images/Project2.png";
 import project3 from "../assets/images/Project3.png";
+import Reveal from "./Reveal";
 
 function ProjectCard() {
     const [activeProject, setActiveProject] = useState(0);
@@ -41,7 +42,7 @@ function ProjectCard() {
         <>
             <div className="text-center lg:mt-32 mt-16 relative">
                 {/* titles */}
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 mb-6 lg:mb-0">
                     {projects.map((project, index) => (
                         <p 
                             key={index}
@@ -57,9 +58,19 @@ function ProjectCard() {
                 </div>
 
                 {/* images */}
-                <div className="relative lg:mt-20 h-85 lg:h-145 w-full flex items-center justify-center overflow-hidden">
+                <div className="
+                        w-full
+                        aspect-video
+                        max-h-[650px]
+                        flex
+                        mt-14
+                        lg:mt-0
+                        items-center
+                        justify-center
+                        overflow-hidden
+                    "
+                >
                     {projects.map((project, index) => {
-
                         const position = (index - activeProject + projects.length) % projects.length;
 
                         let scale;
@@ -89,12 +100,15 @@ function ProjectCard() {
                                 alt={project.title}
                                 className="
                                     absolute
-                                    w-full
+                                    w-[95%]
+                                    md:w-full
                                     max-w-5xl
-                                    rounded-4xl
-                                    shadow-xl
-                                    border-4
+                                    h-auto
+                                    rounded-3xl
+                                    border-3
                                     border-[#433939]
+                                    shadow-xl
+                                    object-cover
                                 "
                                 style={{
                                     zIndex,
@@ -108,74 +122,68 @@ function ProjectCard() {
                                     duration: 0.3,
                                     ease: "easeInOut",
                                 }}
+                                onClick={() =>  
+                                    setActiveProject(
+                                        (prev) => (prev + 1) % projects.length
+                                    )
+                                }
                             />
                         );
                     })}
                 </div>
             </div>
-
-            <div className="flex items-center justify-center lg:mt-12 mt-12">
-                <button
-                    className="bg-black p-4 lg:w-74 w-54 cursor-pointer"
-                    onClick={() =>
-                        setActiveProject(
-                            (prev) => (prev + 1) % projects.length
-                        )
-                    }
-                >
-                    Next
-                </button>
-            </div>
-
+            
             <div className="lg:mt-32 mt-16 w-full">
                 <div className="w-full lg:max-w-[60%] mx-auto">
-                    <h1 className="font-neuehaas text-4xl mb-8">
+                    <h1 className="font-kugile-demo tracking-tighter uppercase text-2xl lg:text-4xl mb-4 lg:mb-8">
                         Figma Designs
                     </h1>
-
-                    <div className="flex flex-col gap-8">
-                        {figmaDesign.map((figma, index) => (
-                            <div 
-                                key={index}
-                                className="
-                                    bg-opacity 
-                                    border-2 
-                                    border-[#433939]
-                                    p-8
-                                    relative
-                                    rounded-md
-                                "
-                            >
-                                <h1 className="font-neuehaas text-[26px] mb-2">
-                                    {figma.title}
-                                </h1>
-                                <p className="font-neuehaas text-grey-1 max-w-200">
-                                    {figma.details}
-                                </p>
-
-                                <div className="flex justify-end mt-6 cursor-pointer">
-                                    <a
-                                        href={figma.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                        <div className="flex flex-col gap-8">
+                            {figmaDesign.map((figma, index) => (
+                                <Reveal delay={0.156}>
+                                    <div 
+                                        key={index}
                                         className="
-                                            inline-flex
-                                            items-center
-                                            justify-center
-                                            bg-white
-                                            text-black
-                                            px-10
-                                            py-3
-                                            transition
-                                            hover:bg-neutral-200
+                                            border-2 
+                                            border-[#433939]
+                                            p-8
+                                            relative
+                                            rounded-md
                                         "
                                     >
-                                        View in Figma
-                                    </a>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                                        <h1 className="font-neuehaas text-[20px] lg:text-[26px] mb-2">
+                                            {figma.title}
+                                        </h1>
+                                        <p className="font-medium text-grey-1 max-w-200">
+                                            {figma.details}
+                                        </p>
+
+                                        <div className="flex justify-end mt-6 cursor-pointer">
+                                            <a
+                                                href={figma.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="
+                                                    inline-flex
+                                                    items-center
+                                                    justify-center
+                                                    text-white
+                                                    border
+                                                    border-[#433939]
+                                                    px-10
+                                                    py-2
+                                                    transition
+                                                    hover:bg-neutral-200
+                                                    hover:text-black
+                                                "
+                                            >
+                                                View in Figma
+                                            </a>
+                                        </div>
+                                    </div>
+                                </Reveal>
+                            ))}
+                        </div>
                 </div>
             </div>
         </>  

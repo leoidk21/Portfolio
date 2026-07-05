@@ -1,8 +1,13 @@
+import PageTitle from "../components/PageTitle";
+import Reveal from "../components/Reveal";
+
 function Works() {
     return (
         <>
             <main>
-                <h1>THIS IS WORKS PAGE!</h1>
+                <Reveal>
+                    <PageTitle text="Works"/>
+                </Reveal>
             </main>
         </>
     );
