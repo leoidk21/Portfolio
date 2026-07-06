@@ -99,7 +99,7 @@ function Navbar() {
                      transition={{ duration: 0.2 }}
                   />
                      <motion.div
-                        className="bg-white fixed inset-y-0  min-w-70 lg:min-w-80 right-0 top-0 p-6 m-6 rounded-2xl z-50"
+                        className="bg-white fixed inset-y-0 min-w-70 lg:min-w-80 right-0 top-0 p-6 m-6 rounded-2xl z-50"
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: "100%", opacity: 0 }}
@@ -124,23 +124,23 @@ function Navbar() {
                               />
                            </div>
 
-                           <ul className="flex flex-col gap-15 text-black uppercase font-kugile-demo">
-                              <li className="font-bold text-[18px] lg:text-2xl tracking">
+                           <ul className="flex flex-col gap-15 text-black uppercase font-neuehaas">
+                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/home">
                                        Home
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking">
+                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/about">
                                        About
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking">
+                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/works">
                                        Works
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking">
+                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/certifications">
                                        Certifications
                                  </NavLink>

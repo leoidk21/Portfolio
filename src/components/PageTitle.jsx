@@ -30,7 +30,7 @@ function PageTitle({ text = "Section" }) {
                             ease: "easeInOut",
                         }}
                     />
-                    <p className="font-neuehaas text-[18px] lg:text-[25px]">Scroll below...</p>
+                    {/* <p className="font-neuehaas text-[18px] lg:text-[25px]">Scroll below...</p> */}
                 </div>
             </Reveal>
         </div>
