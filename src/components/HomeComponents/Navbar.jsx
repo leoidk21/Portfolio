@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../assets/images/LC-Logo.png";
-import logoBlack from "../assets/images/LC-Logo-Black.png";
-import closeBtn from "../assets/images/CLOSE-BUTTON.png";
 import { motion, AnimatePresence, easeInOut, easeIn } from "framer-motion";
+import logo from "../../assets/images/LC-Logo.png";
+import closeBtn from "../../assets/images/CLOSE-BUTTON.png";
+import logoBlack from "../../assets/images/LC-Logo-Black.png";
 
 function Navbar() {
    const location = useLocation();
@@ -37,18 +37,7 @@ function Navbar() {
    return (
       <>
          <nav 
-            className={`
-               flex 
-               items-center 
-               justify-between 
-               p-6 
-               lg:px-8 
-               sticky 
-               top-0
-               z-50
-               transition-colors
-               duration-300
-               ${
+            className={`flex items-center justify-between p-6 lg:px-8 sticky top-0 z-50 transition-colors duration-300 ${
                   isScrolled 
                   ? "bg-black/40 backdrop-blur-sm border-b border-white/10 shadow-lg"
                   : "bg-transparent"
@@ -124,7 +113,7 @@ function Navbar() {
                               />
                            </div>
 
-                           <ul className="flex flex-col gap-15 text-black uppercase font-neuehaas">
+                           <ul className="flex flex-col gap-12 lg:gap-15 text-black uppercase font-neuehaas">
                               <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/home">
                                        Home

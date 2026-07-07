@@ -1,4 +1,4 @@
-import profile from "../assets/images/Profile.jpg";
+import profile from "../../assets/images/Profile.jpg";
 import Reveal from "./Reveal";
 
 function Intro() {
@@ -43,16 +43,18 @@ function Intro() {
                     </div>
                 </div>
 
-                <div className="grid lg:grid-cols-2 w-full gap-4 mt-4 cursor-pointer">
-                    {skills.map((skill, index) => (
-                        <p 
-                            key={index}
-                            className="bg-opacity border border-border rounded-sm p-3 text-center font-extralight"
-                        >
-                            {skill}
-                        </p>
-                    ))}
-                </div>
+                <Reveal delay={0.3}>
+                    <div className="grid lg:grid-cols-2 w-full gap-4 mt-4 cursor-pointer">
+                        {skills.map((skill, index) => (
+                            <p 
+                                key={index}
+                                className="bg-opacity border border-border rounded-sm p-3 text-center font-extralight"
+                            >
+                                {skill}
+                            </p>
+                        ))}
+                    </div>
+                </Reveal>
             </div>
 
             {/* right column */}

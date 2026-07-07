@@ -1,14 +1,17 @@
 import PageTitle from "../components/PageTitle";
-import Reveal from "../components/Reveal";
+import Reveal from "../components/HomeComponents/Reveal";
+import Greet from "../components/AboutComponents/Greet";
+import Services from "../components/AboutComponents/Services";
 
 function About() {
     return (
         <>
-            <main>
-                <Reveal>
-                    <PageTitle text="About"/>
-                </Reveal>
-            </main>
+            <Reveal>
+                <PageTitle text="About"/>
+            </Reveal>
+            
+            <Greet />
+            <Services />
         </>
     );
 }

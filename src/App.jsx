@@ -6,15 +6,7 @@ import About from "./pages/About";
 import Works from "./pages/Works";
 import Certifications from "./pages/Certifications";
 
-import Navbar from "./components/Navbar";
-import Divider from "./components/Divider";
-import TechCard from "./components/TechCard";
-import Button from "./components/Button";
-import Intro from "./components/Intro";
-import ProjectCard from "./components/ProjectCard";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import PageTitle from "./components/PageTitle";
+import Navbar from "./components/HomeComponents/Navbar";
 
 function Layout() {
   const location = useLocation();

@@ -1,4 +1,5 @@
 import { motion, AnimatePresence, easeInOut, easeIn } from "framer-motion";
+import Reveal from "./Reveal";
 
 function TechCard() {
     const techItems = [
@@ -170,53 +171,55 @@ function TechCard() {
             <p className="font-neuehaas lg:text-3xl lg:p-6 p-4 tracking-tighter max-w-200">Here are the technologies I currently work with, as well as those I've used in past projects.</p>
 
             <div className="w-full overflow-hidden cursor-pointer">
-                <div 
-                    className="mask-[linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)]"
-                >
-                    <motion.div 
-                        className="flex w-max lg:mt-12 mt-6"
-                        animate={{ 
-                            x: ["0%", "-50%"],
-                        }}
-                        transition={{ 
-                            ease: "linear",
-                            duration: 95,
-                            repeat: Infinity,
-                        }}
+                <Reveal>
+                    <div 
+                        className="mask-[linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)]"
                     >
-                        {duplicateItems.map((item, index) => (
-                            <div 
-                                key={index} 
-                                className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center rounded-md"
-                            >
-                                {renderSvg(item.svg)}
-                                <p className="mt-6">{item.name}</p>
-                            </div>
-                        ))} 
-                    </motion.div>
+                        <motion.div 
+                            className="flex w-max lg:mt-12 mt-6"
+                            animate={{ 
+                                x: ["0%", "-50%"],
+                            }}
+                            transition={{ 
+                                ease: "linear",
+                                duration: 95,
+                                repeat: Infinity,
+                            }}
+                        >
+                            {duplicateItems.map((item, index) => (
+                                <div 
+                                    key={index} 
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center rounded-md"
+                                >
+                                    {renderSvg(item.svg)}
+                                    <p className="mt-6">{item.name}</p>
+                                </div>
+                            ))} 
+                        </motion.div>
 
-                    <motion.div 
-                        className="flex w-max lg:mt-14 mt-6"
-                        animate={{ 
-                            x: ["-50%", "0%"],
-                        }}
-                        transition={{ 
-                            ease: "linear",
-                            duration: 95,
-                            repeat: Infinity,
-                        }}
-                    >
-                        {duplicateItems2.map((item, index) => (
-                            <div 
-                                key={index}
-                                className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center"
-                            >
-                                {renderSvg2(item.svg)}
-                                <p className="mt-6">{item.name}</p>
-                            </div>
-                        ))} 
-                    </motion.div>
-                </div>
+                        <motion.div 
+                            className="flex w-max lg:mt-14 mt-6"
+                            animate={{ 
+                                x: ["-50%", "0%"],
+                            }}
+                            transition={{ 
+                                ease: "linear",
+                                duration: 95,
+                                repeat: Infinity,
+                            }}
+                        >
+                            {duplicateItems2.map((item, index) => (
+                                <div 
+                                    key={index}
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center"
+                                >
+                                    {renderSvg2(item.svg)}
+                                    <p className="mt-6">{item.name}</p>
+                                </div>
+                            ))} 
+                        </motion.div>
+                    </div>
+                </Reveal>
 
             </div>
         </div>

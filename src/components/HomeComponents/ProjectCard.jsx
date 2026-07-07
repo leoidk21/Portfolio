@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence, easeInOut, easeIn, scale } from "framer-motion";
-import project1 from "../assets/images/Project1.png";
-import project2 from "../assets/images/Project2.png";
-import project3 from "../assets/images/Project3.png";
+import project1 from "../../assets/images/Project1.png";
+import project2 from "../../assets/images/Project2.png";
+import project3 from "../../assets/images/Project3.png";
 import Reveal from "./Reveal";
 
 function ProjectCard() {
@@ -58,18 +58,7 @@ function ProjectCard() {
                 </div>
 
                 {/* images */}
-                <div className="
-                        w-full
-                        aspect-video
-                        max-h-[650px]
-                        flex
-                        mt-14
-                        lg:mt-0
-                        items-center
-                        justify-center
-                        overflow-hidden
-                    "
-                >
+                <div className="w-full aspect-video max-h-162.5 flex mt-14 lg:mt-0 items-center justify-center overflow-hidden">
                     {projects.map((project, index) => {
                         const position = (index - activeProject + projects.length) % projects.length;
 
@@ -98,18 +87,7 @@ function ProjectCard() {
                                 key={index}
                                 src={project.image}
                                 alt={project.title}
-                                className="
-                                    absolute
-                                    w-[95%]
-                                    md:w-full
-                                    max-w-5xl
-                                    h-auto
-                                    rounded-3xl
-                                    border-3
-                                    border-[#433939]
-                                    shadow-xl
-                                    object-cover
-                                "
+                                className="absolute w-[95%] md:w-full max-w-5xl h-auto rounded-3xl border-3 border-[#433939] shadow-xl object-cover"
                                 style={{
                                     zIndex,
                                 }}
@@ -143,13 +121,7 @@ function ProjectCard() {
                                 <Reveal delay={0.156}>
                                     <div 
                                         key={index}
-                                        className="
-                                            border-2 
-                                            border-[#433939]
-                                            p-8
-                                            relative
-                                            rounded-md
-                                        "
+                                        className="border-2 border-[#433939] p-8 relative rounded-md"
                                     >
                                         <h1 className="font-neuehaas text-[20px] lg:text-[26px] mb-2">
                                             {figma.title}
@@ -163,19 +135,7 @@ function ProjectCard() {
                                                 href={figma.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="
-                                                    inline-flex
-                                                    items-center
-                                                    justify-center
-                                                    text-white
-                                                    border
-                                                    border-[#433939]
-                                                    px-10
-                                                    py-2
-                                                    transition
-                                                    hover:bg-neutral-200
-                                                    hover:text-black
-                                                "
+                                                className="inline-flex items-center justify-centertext-white border border-[#433939] px-10 py-2 transitionhover:bg-neutral-200 hover:text-black"
                                             >
                                                 View in Figma
                                             </a>

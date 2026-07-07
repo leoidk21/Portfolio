@@ -2,30 +2,23 @@ import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import developerText from "../assets/images/DEVELOPER.png";
-import Divider from "../components/Divider";
-import TechCard from "../components/TechCard";
-import Button from "../components/Button";
-import Intro from "../components/Intro";
-import ProjectCard from "../components/ProjectCard";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Reveal from "../components/Reveal";
+import Divider from "../components/HomeComponents/Divider";
+import TechCard from "../components/HomeComponents/TechCard";
+import Button from "../components/HomeComponents/Button";
+import Intro from "../components/HomeComponents/Intro";
+import ProjectCard from "../components/HomeComponents/ProjectCard";
+import Contact from "../components/HomeComponents/Contact";
+import Footer from "../components/HomeComponents/Footer";
+import Reveal from "../components/HomeComponents/Reveal";
 
 function Home() {
   return (
     <>
     <main>
         <section className="relative flex flex-col lg:min-h-screen p-5 md:p-10 justify-end sm:min-h-0">
-            <div className="flex flex-col w-full mb-16 overflow-hidden">
+            <div className="flex flex-col w-full mt-20 mb-16 overflow-hidden">
                 <motion.h1 
-                    className="
-                        font-piala-regular 
-                        text-3xl 
-                        sm:text-4xl 
-                        md:text-5xl 
-                        lg:text-8xl 
-                        tracking-tighter"
-
+                    className="font-piala-regular text-3xl sm:text-4xl md:text-5xl lg:text-8xl tracking-tighter"
                         initial={{
                             opacity: 0,
                             y: 30
@@ -59,11 +52,12 @@ function Home() {
             </div>
         </section>
       
-        <Reveal>
-            <section className="bg-white-2 text-black flex flex-col items-center p-8 sm:p-12 lg:mt-30">
+        
+        <section className="bg-white-2 text-black flex flex-col items-center p-8 sm:p-12 lg:mt-30">
+            <Reveal>
                 <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl lg:tracking-[-8px] tracking-[-2.5px] font-montserrat-black text-center">Design, Develop <span className="font-montserrat-black-italic">'n</span> Deploy.</h3>
-            </section>
-        </Reveal>
+            </Reveal>
+        </section>
 
         <section className="lg:mt-44 mt-10 p-5 lg:p-10">
             <Reveal>
