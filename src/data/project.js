@@ -3,12 +3,12 @@ import project1 from "../assets/images/Project1.png";
 import project2 from "../assets/images/Project4.png";
 import project3 from "../assets/images/Project5.png";
 
-// frontend mentor
-import project4 from "../assets/images/project2.png";
-import project5 from "../assets/images/project3.png";
+// Frontend mentor
+import project4 from "../assets/images/Project2.png";
+import project5 from "../assets/images/Project3.png";
 
 // other school based
-import project6 from "../assets/images/project6.png";
+import project6 from "../assets/images/Project6.png";
 
 const workProject = [
     // capstone
