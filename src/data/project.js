@@ -53,12 +53,12 @@ const workProject = [
         actions: [
             {
                 label: "View in Figma",
-                url: "",
+                url: "https://www.figma.com/design/t7h5jpZ3QECEC3p0QcE8qk/OBH-Desktop-App?node-id=0-1&t=2na9xdMXCuuQeCzO-1",
                 variant: "primary"
             },
             {
                 label: "View code",
-                url: "",
+                url: "https://github.com/leoidk21/O.B.H-System",
                 variant: "secondary"
             },
         ],
@@ -76,12 +76,12 @@ const workProject = [
         actions: [
             {
                 label: "View in Figma",
-                url: "",
+                url: "https://www.figma.com/design/uDd7h4UsItp8UvzEjGHHg9/OBH-Mobile-App?node-id=0-1&t=pziZMUyIXfzdbsKJ-1",
                 variant: "primary"
             },
             {
                 label: "View code",
-                url: "",
+                url: "https://github.com/leoidk21/O.B.H-System",
                 variant: "secondary"
             },
         ],
@@ -152,7 +152,7 @@ const workProject = [
         actions: [
             {
                 label: "View in Figma",
-                url: "",
+                url: "https://www.figma.com/proto/O6MvaC1Lo4ILBm8smniun3/Elder-Living?node-id=4-14&starting-point-node-id=4%3A14&t=ejX2MoYz3KJI3T2W-1",
                 variant: "primary"
             },
         ],

@@ -29,7 +29,7 @@ function Intro() {
                     <img
                         src={profile} 
                         alt="Profile"
-                        className="w-full h-auto sm:h-80 md:h-96 lg:h-115 object-cover"
+                        className="w-full h-auto sm:h-80 md:h-96 lg:h-115 object-cover transition duration-300 ease-in-out hover:scale-110"
                     />
                     <div className="absolute bottom-0 w-full h-auto bg-opacity lg:p-6 flex flex-col gap-2 p-4">
                         {info.map((infos, index) => (
@@ -43,18 +43,16 @@ function Intro() {
                     </div>
                 </div>
 
-                <Reveal delay={0.3}>
-                    <div className="grid lg:grid-cols-2 w-full gap-4 mt-4 cursor-pointer">
-                        {skills.map((skill, index) => (
-                            <p 
-                                key={index}
-                                className="bg-opacity border border-border rounded-sm p-3 text-center font-extralight"
-                            >
-                                {skill}
-                            </p>
-                        ))}
-                    </div>
-                </Reveal>
+                <div className="grid lg:grid-cols-2 w-full gap-4 mt-4 cursor-pointer">
+                    {skills.map((skill, index) => (
+                        <p 
+                            key={index}
+                            className="bg-opacity border border-zinc-600 rounded-sm p-3 text-center font-extralight hover:rotate-1 transition-transform duration-300"
+                        >
+                            {skill}
+                        </p>
+                    ))}
+                </div>
             </div>
 
             {/* right column */}

@@ -51,11 +51,10 @@ function Home() {
                 />
             </div>
         </section>
-      
         
-        <section className="bg-white-2 text-black flex flex-col items-center p-8 sm:p-12 lg:mt-30">
+        <section className="bg-white-2 text-black flex flex-col items-center p-8 sm:p-12 lg:mt-30 mt-15">
             <Reveal>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl lg:tracking-[-8px] tracking-[-2.5px] font-montserrat-black text-center">Design, Develop <span className="font-montserrat-black-italic">'n</span> Deploy.</h3>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-9xl lg:tracking-[-8px] tracking-[-2.5px] font-montserrat-black text-center">Design, <span className="font-kugile-demo">Develop </span> <span className="font-montserrat-black-italic">'n</span> Deploy.</h3>
             </Reveal>
         </section>
 
@@ -75,7 +74,7 @@ function Home() {
             </Reveal>
         </section>
 
-        <section>
+        <section className="mt-12 mb-12 lg:mt-24 flex justify-center">
             <Reveal delay={0.4}>
                 <NavLink to="/certifications">
                     <Button text="View Certifications" />
@@ -92,11 +91,14 @@ function Home() {
                 <ProjectCard />
             </Reveal>   
 
-            <Reveal delay={0.4}>
-                <NavLink to="/works">
-                    <Button text="View Work Details" />
-                </NavLink>
-            </Reveal>
+
+            <section className="mt-12 mb-12 lg:mt-24 flex justify-center">
+                <Reveal delay={0.4}>
+                    <NavLink to="/works">
+                        <Button text="View Work Details" />
+                    </NavLink>
+                </Reveal>
+            </section>
         </section>
 
         <section className="lg:mt-44 mt-10 p-5 lg:p-10">
@@ -108,11 +110,15 @@ function Home() {
                 <Contact />
             </Reveal>
 
-            <Reveal delay={0.4}>
-                <NavLink to="">
-                    <Button text="View Resume" />
-                </NavLink>
-            </Reveal>
+            <section className="mt-12 mb-12 lg:mt-24 flex justify-center">
+                <Reveal delay={0.4}>
+                    <NavLink 
+                        target="_blank"
+                        to="https://drive.google.com/file/d/1J1jNKbhgchisFhCVt34JpYivBR-mHFBd/view?usp=sharing">
+                        <Button text="View Resume" />
+                    </NavLink>
+                </Reveal>
+            </section>
         </section>
 
         <section>

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { X } from "lucide-react";
 import { motion, AnimatePresence, easeInOut, easeIn } from "framer-motion";
 import logo from "../../assets/images/LC-Logo.png";
-import closeBtn from "../../assets/images/CLOSE-BUTTON.png";
-import logoBlack from "../../assets/images/LC-Logo-Black.png";
+import logoBlack from "../../assets/images/LC-Logo.png";
 
 function Navbar() {
    const location = useLocation();
@@ -63,11 +63,13 @@ function Navbar() {
                </>
             ) : (
                <>
-                  <img
-                     src={logo}
-                     alt="LC Logo"
-                     className="max-w-12.5 sm:max-w-12.5 h-auto object-contain"
-                  />
+                  <NavLink to="/home">
+                     <img
+                        src={logo}
+                        alt="LC Logo"
+                        className="max-w-12.5 sm:max-w-12.5 h-auto object-contain"
+                     />
+                  </NavLink>
                   <h1
                      className="font-neuehaas text-xl sm:text-lg lg:text-2xl font-bold tracking-tighter cursor-pointer"
                      onClick={toggleMenu}
@@ -88,7 +90,7 @@ function Navbar() {
                      transition={{ duration: 0.2 }}
                   />
                      <motion.div
-                        className="bg-white fixed inset-y-0 min-w-70 lg:min-w-80 right-0 top-0 p-6 m-6 rounded-2xl z-50"
+                        className="bg-zinc-900 border border-zinc-700 fixed inset-y-0 min-w-70 lg:min-w-80 right-0 top-0 p-6 m-6 rounded-2xl z-50"
                         initial={{ x: "100%", opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: "100%", opacity: 0 }}
@@ -105,31 +107,26 @@ function Navbar() {
                                  alt="LC-Logo-Black"
                                  className="max-w-12.5 sm:max-w-12.5 h-auto object-contain"
                               />
-                              <img
-                                 src={closeBtn}
-                                 alt="Close Button"
-                                 className="max-w-6 sm:max-w-6 h-auto object-contain cursor-pointer"
-                                 onClick={toggleMenu}
-                              />
+                              <X size={32} onClick={toggleMenu} className="cursor-pointer"/>
                            </div>
 
-                           <ul className="flex flex-col gap-12 lg:gap-15 text-black uppercase font-neuehaas">
-                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
+                           <ul className="flex flex-col gap-12 lg:gap-15 text-white uppercase font-neuehaas">
+                              <li className="font-montserrat-regular text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/home">
                                        Home
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
+                              <li className="font-montserrat-regular text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/about">
                                        About
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
+                              <li className="font-montserrat-regular text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/works">
                                        Works
                                  </NavLink>
                               </li>
-                              <li className="font-bold text-[18px] lg:text-2xl tracking-tighter">
+                              <li className="font-montserrat-regular text-[18px] lg:text-2xl tracking-tighter">
                                  <NavLink to="/certifications">
                                        Certifications
                                  </NavLink>

@@ -26,14 +26,17 @@ function ProjectCard() {
     const figmaDesign = [
         {
             title: "01: ELDER LIVING ECOMMERCE WEBSITE",
+            url: "https://www.figma.com/proto/O6MvaC1Lo4ILBm8smniun3/Elder-Living?node-id=4-14&starting-point-node-id=4%3A14&t=ejX2MoYz3KJI3T2W-1",
             details: "An e-commerce website built as a school project to help elderly users shop online easily. The design focuses on large typography, simple navigation, and clear layouts to make technology stress-free for older generations."
         },
         {
             title: "02: ORCHESTRATED BY HISTORY MOBILE APP",
+            url: "https://www.figma.com/design/uDd7h4UsItp8UvzEjGHHg9/OBH-Mobile-App?node-id=0-1&t=pziZMUyIXfzdbsKJ-1",
             details: "A mobile app built as a capstone project for an event management community partner. The system simplifies how users register, book, and schedule their events through a clean, intuitive interface."
         },
         {
             title: "03: ORCHESTRATED BY HISTORY DESKTOP APP",
+            url: "https://www.figma.com/design/t7h5jpZ3QECEC3p0QcE8qk/OBH-Desktop-App?node-id=0-1&t=2na9xdMXCuuQeCzO-1",
             details: "An admin desktop app that connects with our event mobile application. It helps the event management team easily track user registrations, manage bookings, and handle event schedules from a dashboard."
         }
     ];
@@ -58,7 +61,7 @@ function ProjectCard() {
                 </div>
 
                 {/* images */}
-                <div className="w-full aspect-video max-h-162.5 flex mt-14 lg:mt-0 items-center justify-center overflow-hidden">
+                <div className="w-full aspect-video max-h-162.5 flex mt-14 lg:mt-0 items-center justify-center overflow-hidden cursor-pointer">
                     {projects.map((project, index) => {
                         const position = (index - activeProject + projects.length) % projects.length;
 
@@ -87,7 +90,7 @@ function ProjectCard() {
                                 key={index}
                                 src={project.image}
                                 alt={project.title}
-                                className="absolute w-[95%] md:w-full max-w-5xl h-auto rounded-3xl border-3 border-[#433939] shadow-xl object-cover"
+                                className="absolute w-[95%] md:w-full max-w-5xl h-auto rounded-2xl lg:rounded-3xl border-2 lg:border-3 border-[#433939] shadow-xl object-cover"
                                 style={{
                                     zIndex,
                                 }}
@@ -121,7 +124,7 @@ function ProjectCard() {
                                 <Reveal delay={0.156}>
                                     <div 
                                         key={index}
-                                        className="border-2 border-[#433939] p-8 relative rounded-md"
+                                        className="border border-zinc-700 p-8 relative rounded-md"
                                     >
                                         <h1 className="font-neuehaas text-[20px] lg:text-[26px] mb-2">
                                             {figma.title}
@@ -132,10 +135,10 @@ function ProjectCard() {
 
                                         <div className="flex justify-end mt-6 cursor-pointer">
                                             <a
-                                                href={figma.link}
+                                                href={figma.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center justify-centertext-white border border-[#433939] px-10 py-2 transitionhover:bg-neutral-200 hover:text-black"
+                                                className="inline-flex items-center justify-centertext-white border border-zinc-700 px-10 py-2 transition-all duration-500 hover:bg-neutral-200 hover:text-black"
                                             >
                                                 View in Figma
                                             </a>

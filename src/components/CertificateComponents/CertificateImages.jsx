@@ -15,22 +15,24 @@ function CertificateImages() {
     return (
         <div className="w-full pl-10 lg:pl-40">
             <div className="mt-20 lg:mt-44 mb-30">
-                <div className="flex w-full overflow-x-auto items-center gap-5 pb-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
-                    {certificate.map((certs, index) => (
-                        <div
-                            key={index}
-                            className="shrink-0"
-                        >
-                            <Reveal delay={0.4}>
+                <div className="my-scrollbar scrollbar-thin scrollbar-thumb-zinc-700 scrollbar-track-transparent [&::-webkit-scrollbar-button]:hidden">
+                    <Reveal delay={0.4} className="flex w-full overflow-x-auto items-center gap-5 pb-4">
+                        {certificate.map((certs, index) => (
+                            
+                            <div
+                                key={index}
+                                className="shrink-0"
+                            >
                                 <img
                                     src={certs}
                                     alt={`Certificate ${index + 1}`}
                                     className="h-50 w-70 lg:h-85 lg:w-120 object-cover rounded-lg"
                                 />
-                            </Reveal>
-                        </div>
-                    ))}
+                            </div>
+                        ))}
+                    </Reveal>
                 </div>
+                <p className="font-extralight text-[16px] mt-4">Scroll Horizontally</p>
             </div>
         </div>
     );

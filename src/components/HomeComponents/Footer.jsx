@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import EmailIcon from "../../assets/images/EmailBlack.svg";
-import FacebookIcon from "../../assets/images/FacebookBlack.svg";
+import EmailIcon from "../../assets/svg/EmailBlack.svg";
+import FacebookIcon from "../../assets/svg/FacebookBlack.svg";
 
 function Footer() {
     const navigate = [

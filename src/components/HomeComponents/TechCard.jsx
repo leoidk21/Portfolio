@@ -168,6 +168,7 @@ function TechCard() {
 
     return (
         <div className="flex flex-col items-center justify-center text-center mt-6 lg:mt-42">
+            <p className="lg:border-b-0 border-b w-2xs pb-1 mb-6 mt-8"></p>
             <p className="font-neuehaas lg:text-3xl lg:p-6 p-4 tracking-tighter max-w-200">Here are the technologies I currently work with, as well as those I've used in past projects.</p>
 
             <div className="w-full overflow-hidden cursor-pointer">
@@ -189,7 +190,7 @@ function TechCard() {
                             {duplicateItems.map((item, index) => (
                                 <div 
                                     key={index} 
-                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center rounded-md"
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center rounded-md tech-icon"
                                 >
                                     {renderSvg(item.svg)}
                                     <p className="mt-6">{item.name}</p>
@@ -211,7 +212,7 @@ function TechCard() {
                             {duplicateItems2.map((item, index) => (
                                 <div 
                                     key={index}
-                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center"
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center tech-icon"
                                 >
                                     {renderSvg2(item.svg)}
                                     <p className="mt-6">{item.name}</p>

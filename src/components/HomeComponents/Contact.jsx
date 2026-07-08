@@ -1,7 +1,7 @@
-import linkedIn from "../../assets/images/LinkedIn.svg";
-import email from "../../assets/images/Email.svg";
-import facebook from "../../assets/images/Facebook.svg";
-import github from "../../assets/images/GitHub.svg";
+import linkedIn from "../../assets/svg/LinkedIn.svg";
+import email from "../../assets/svg/Email.svg";
+import facebook from "../../assets/svg/Facebook.svg";
+import github from "../../assets/svg/GitHub.svg";
 
 function Contact() {
     const socialIcons = [
