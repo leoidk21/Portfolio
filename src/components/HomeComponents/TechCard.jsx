@@ -173,9 +173,7 @@ function TechCard() {
 
             <div className="w-full overflow-hidden cursor-pointer">
                 <Reveal>
-                    <div 
-                        className="mask-[linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_right,transparent_0%,white_10%,white_90%,transparent_100%)]"
-                    >
+                    <div>
                         <motion.div 
                             className="flex w-max lg:mt-12 mt-6"
                             animate={{ 
@@ -190,7 +188,7 @@ function TechCard() {
                             {duplicateItems.map((item, index) => (
                                 <div 
                                     key={index} 
-                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center rounded-md tech-icon"
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-zinc-950 border border-zinc-900 m-4 md:m-8 flex flex-col items-center rounded-md tech-icon"
                                 >
                                     {renderSvg(item.svg)}
                                     <p className="mt-6">{item.name}</p>
@@ -212,7 +210,7 @@ function TechCard() {
                             {duplicateItems2.map((item, index) => (
                                 <div 
                                     key={index}
-                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-black m-4 md:m-8 flex flex-col items-center tech-icon"
+                                    className="w-44 md:w-56 lg:w-64 shrink-0 p-8 md:p-12 bg-zinc-950 border border-zinc-900 m-4 md:m-8 flex flex-col items-center rounded-md tech-icon"
                                 >
                                     {renderSvg2(item.svg)}
                                     <p className="mt-6">{item.name}</p>
