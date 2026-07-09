@@ -47,7 +47,7 @@ function Navbar() {
             {isHome ? (
                <>
                   <h1 className="font-neuehaas hidden sm:block lg:text-2xl font-bold tracking-tighter">
-                     open for work
+                     open to work
                   </h1>
                   <img
                      src={logo}
@@ -74,7 +74,7 @@ function Navbar() {
                      className="font-neuehaas text-xl sm:text-lg lg:text-2xl font-bold tracking-tighter cursor-pointer"
                      onClick={toggleMenu}
                   >
-                     Menu
+                     menu
                   </h1>
                </>
             )}

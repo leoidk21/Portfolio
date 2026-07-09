@@ -11,7 +11,7 @@ function LoadingScreen() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.3,
+                staggerChildren: 0.05,
             },
         },
     };
@@ -22,10 +22,8 @@ function LoadingScreen() {
             y: [-20, 0],
             transition: {
                 type: "spring",
-                stiffness: 300,
-                damping: 3,
-                duration: 0.6,
-                repeat: 2,
+                stiffness: 350,
+                damping: 2,
                 repeatType: "reverse",
             },
         },

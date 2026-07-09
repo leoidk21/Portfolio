@@ -91,7 +91,6 @@ function Home() {
                 <ProjectCard />
             </Reveal>   
 
-
             <section className="mt-12 mb-12 lg:mt-24 flex justify-center">
                 <Reveal delay={0.4}>
                     <NavLink to="/works">
@@ -114,7 +113,7 @@ function Home() {
                 <Reveal delay={0.4}>
                     <NavLink 
                         target="_blank"
-                        to="https://drive.google.com/file/d/1J1jNKbhgchisFhCVt34JpYivBR-mHFBd/view?usp=sharing">
+                        to="https://drive.google.com/file/d/1J1jNKbhgchisFhCVt34JpYivBR-mHFBd/view">
                         <Button text="View Resume" />
                     </NavLink>
                 </Reveal>
