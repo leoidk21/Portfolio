@@ -120,7 +120,7 @@ const workProject = [
         parag: "A weather app with search functionality, unit conversion, and detailed forecasts using the Open-Meteo API.",
         technologies: [
             "React",
-            "Open Mateo Geocoding",
+            "Open Meteo",
             "Vite",
             "Forecast APIs"
         ],

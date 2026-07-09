@@ -10,9 +10,9 @@ function CertificateIntro() {
                         <span className="text-zinc-500 font-montserrat-black">
                             academic certificates,
                         </span>{" "}
-                        government-accredited{" "}
+                        government-issued{" "}
                         <span className="text-zinc-500 font-montserrat-black">
-                            IT certifications,
+                            webinar certificates,
                         </span>{" "}
                         and professional credentials in{" "}
                         <span className="text-zinc-500 font-montserrat-black">

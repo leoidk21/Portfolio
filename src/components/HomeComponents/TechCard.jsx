@@ -183,7 +183,7 @@ function TechCard() {
                             }}
                             transition={{ 
                                 ease: "linear",
-                                duration: 95,
+                                duration: 50,
                                 repeat: Infinity,
                             }}
                         >
@@ -205,7 +205,7 @@ function TechCard() {
                             }}
                             transition={{ 
                                 ease: "linear",
-                                duration: 95,
+                                duration: 50,
                                 repeat: Infinity,
                             }}
                         >

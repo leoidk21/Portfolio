@@ -21,11 +21,11 @@ function Home() {
                     className="font-piala-regular text-3xl sm:text-4xl md:text-5xl lg:text-8xl tracking-tighter"
                         initial={{
                             opacity: 0,
-                            y: 30
+                            x: 100
                         }}
                         animate={{
                             opacity: 1,
-                            y: 0,
+                            x: 0,
                         }}
                         transition={{
                             duration: 0.8,
@@ -39,7 +39,7 @@ function Home() {
                     
                     initial={{
                         opacity: 0,
-                        x: -100,
+                        x: -100
                     }} 
                     animate={{
                         opacity: 1,
@@ -54,7 +54,7 @@ function Home() {
         
         <section className="bg-white-2 text-black flex flex-col items-center p-8 sm:p-12 lg:mt-30 mt-15">
             <Reveal>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-9xl lg:tracking-[-8px] tracking-[-2.5px] font-montserrat-black text-center">Design, <span className="font-kugile-demo">Develop </span> <span className="font-montserrat-black-italic">'n</span> Deploy.</h3>
+                <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl lg:tracking-[-8px] tracking-[-2.5px] font-montserrat-black text-center">Design, <span className="font-kugile-demo">Develop </span> <span className="font-piala-regular">'n</span> Deploy.</h3>
             </Reveal>
         </section>
 
